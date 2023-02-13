@@ -1,0 +1,23 @@
+{
+  "name": "interview-exercise",
+  "version": "1.0.0",
+  "description": "interview excercise for node",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha *.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gecgithub01.walmart.com/d0h0hh1/node-interview-exercise.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0",
+    "sinon": "^15.0.1"
+  }
+}

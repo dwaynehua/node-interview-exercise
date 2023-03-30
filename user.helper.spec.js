@@ -35,7 +35,7 @@ describe('UserHelper', () => {
     });
 
     it('should handle empty data set', () => {
-      /** After defining userDatabaseStub, you can modify it's behavior by changing the .returns like i did below */
+      /** After defining userDatabaseStub, you can modify its behavior by changing the .returns like i did below */
       userDatabaseStub.returns([]);
 
       const result = UserHelper.getSortedUsers();
@@ -43,7 +43,7 @@ describe('UserHelper', () => {
       expect(result).to.deep.equal([]);
     });
 
-    /** @todo add a couple more tests for various scenarios, each with it's own "it()" */
+    /** @todo add a couple more tests for various scenarios, each with its own "it()" */
   });
 
 });

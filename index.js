@@ -4,7 +4,7 @@ const app = express();
 const port = 3000;
 
 app.get('/', (req, res) => {
-  res.send('Hello Yina!!');
+  res.send('Hello!!');
 });
 
 app.get('/users', (req, res) => {
@@ -15,28 +15,28 @@ app.get('/users', (req, res) => {
 
   /** @todo fix this api. */
   /** @todo write a spec(test) that exposes this bug in user.helper.spec.js */
-  
-  /** 
+
+  /**
    * @todo update this api to allow filtering/limiting the results based on the query params (age, hairColor, name)
    * ie: http://localhost:3000/users?age=3
    *     http://localhost:3000/users?hairColor=black
    *     http://localhost:3000/users?name=Yina
-   * 
+   *
    * or multiple parameters (results should have all of the params.):
-   * 
+   *
    *    http://localhost:3000/users?name=Yina&hairColor=black
-   * 
-   * 
+   *
+   *
    * to access all query params: req.query
    * to access age query param: req.query.age
-   * 
+   *
    * for this exercise, make most of your changes inside UserHelper.getSortedUsers().
-   * 
+   *
    * (you'll need to make some changes to this current function to pass in the query params)
-   * 
+   *
   */
 
-  /** 
+  /**
    * @todo The data source is not very reliable and the data has all sorts of different capitalization.
    * what can we do to make everything case insenstive? (without changing the data)
   */

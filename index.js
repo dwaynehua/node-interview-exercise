@@ -35,6 +35,15 @@ app.get('/users', (req, res) => {
    * (you'll need to make some changes to this current function to pass in the query params)
    *
   */
+ 
+  /**
+   * @todo write a spec that validates the hairColor filter
+  */
+
+  /**
+   * @todo write a spec that validates the a combination of filters
+  */
+
 
   /**
    * @todo The data source is not very reliable and the data has all sorts of different capitalization.
@@ -45,7 +54,11 @@ app.get('/users', (req, res) => {
   res.send(users);
 });
 
-/** @todo create a new API that returns the name of the oldest person for each hair color */
+/**
+ * @todo create a new API that returns the name of the oldest person for each hair color 
+ * expected output format: { "brown": "<name>", "black": "<name>", etc }
+ * 
+*/
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
